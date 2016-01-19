@@ -13,13 +13,11 @@ Pod::Spec.new do |s|
   s.author       = "Leo Natan"
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/Igor-Palaguta/LNNotificationsUI.git" }
-  s.framework    = 'AVFoundation'
-  s.source_files = 'LNNotificationsUI/LNNotificationsUI/LNNotificationsUI.h'
-  s.public_header_files = 'LNNotificationsUI/LNNotificationsUI/LNNotificationsUI.h'
 
   s.subspec "Banner" do |ss|
     ss.source_files = "LNNotificationsUI/LNNotificationsUI/Banner/*.{h,m}"
-    ss.public_header_files = "LNNotificationsUI/LNNotificationsUI/Banner/*.h"
+    ss.public_header_files = 'LNNotificationsUI/LNNotificationsUI/LNNotificationsUI.h'
+    ss.framework    = 'AVFoundation'
   end
 
   s.subspec "Customize" do |ss|
