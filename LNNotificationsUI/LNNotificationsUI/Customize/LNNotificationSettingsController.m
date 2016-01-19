@@ -7,9 +7,10 @@
 //
 
 #import "LNNotificationSettingsController.h"
-#import "LNNotificationCenter.h"
-#import "LNNotificationAppSettings_Private.h"
 #import "LNNotificationsAppSettingsController.h"
+
+#import "../Banner/LNNotificationCenter.h"
+#import "../Banner/LNNotificationAppSettings_Private.h"
 
 @interface LNNotificationSettingsController ()
 
