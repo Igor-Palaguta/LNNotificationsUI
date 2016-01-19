@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Igor-Palaguta/LNNotificationsUI.git" }
 
   s.subspec "Banner" do |ss|
-    ss.source_files = "LNNotificationsUI/LNNotificationsUI/Banner/*.{h,m}"
+    ss.source_files = "LNNotificationsUI/LNNotificationsUI/Banner/*.{h,m}", 'LNNotificationsUI/LNNotificationsUI/LNNotificationsUI.h'
     ss.public_header_files = 'LNNotificationsUI/LNNotificationsUI/LNNotificationsUI.h'
     ss.framework    = 'AVFoundation'
   end
