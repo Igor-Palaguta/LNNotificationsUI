@@ -52,7 +52,7 @@
 		39D646E219E5D7460069C197 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		39FC4F8319B8EFB400E45E37 /* LNNotificationsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LNNotificationsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FC4F8719B8EFB400E45E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39FC4F8819B8EFB400E45E37 /* LNNotificationsUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LNNotificationsUI.h; path = LNNotificationsUI/LNNotificationsUI.h; sourceTree = "<group>"; };
+		39FC4F8819B8EFB400E45E37 /* LNNotificationsUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNNotificationsUI.h; sourceTree = "<group>"; };
 		7862078C1C4E404D00D520E8 /* libLNNotificationsUILib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLNNotificationsUILib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		786207A61C4E4A1C00D520E8 /* LNNotificationsAppSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNNotificationsAppSettingsController.m; sourceTree = "<group>"; };
 		786207A71C4E4A1C00D520E8 /* LNNotificationsAppSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNNotificationsAppSettingsController.h; sourceTree = "<group>"; };
@@ -94,7 +94,6 @@
 		39FC4F7919B8EFB400E45E37 = {
 			isa = PBXGroup;
 			children = (
-				39FC4F8819B8EFB400E45E37 /* LNNotificationsUI.h */,
 				39FC4F8519B8EFB400E45E37 /* LNNotificationsUI */,
 				39FC4F8419B8EFB400E45E37 /* Products */,
 			);
@@ -112,6 +111,7 @@
 		39FC4F8519B8EFB400E45E37 /* LNNotificationsUI */ = {
 			isa = PBXGroup;
 			children = (
+				39FC4F8819B8EFB400E45E37 /* LNNotificationsUI.h */,
 				786207B01C4E4A3F00D520E8 /* Banner */,
 				786207A51C4E4A0800D520E8 /* Customize */,
 				3976DDB519CCA37F00053EEF /* LNNotificationsUIAssets.xcassets */,

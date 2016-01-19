@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
   
   s.subspec "Customize" do |ss|
     ss.source_files = "LNNotificationsUI/LNNotificationsUI/Customize/*.{h,m}"
+    ss.dependency 'LNNotificationsUI/Banner'
   end
 
 end

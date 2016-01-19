@@ -9,8 +9,8 @@
 #import "LNNotificationsAppSettingsController.h"
 
 
-#import "../Banner/LNNotificationCenter.h"
-#import "../Banner/LNNotificationAppSettings_Private.h"
+#import "LNNotificationCenter.h"
+#import "LNNotificationAppSettings_Private.h"
 
 
 @interface _LNTintedLabel : UILabel @end
