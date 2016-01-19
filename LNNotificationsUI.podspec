@@ -17,13 +17,11 @@ Pod::Spec.new do |s|
 
   s.subspec "Banner" do |ss|
     ss.source_files = "LNNotificationsUI/LNNotificationsUI/Banner/*.{h,m}", 'LNNotificationsUI/LNNotificationsUI/LNNotificationsUI.h'
-    ss.public_header_files = 'LNNotificationsUI/LNNotificationsUI/LNNotificationsUI.h'
     ss.framework    = 'AVFoundation'
   end
 
   s.subspec "Customize" do |ss|
     ss.source_files = "LNNotificationsUI/LNNotificationsUI/Customize/*.{h,m}"
-    ss.public_header_files = "LNNotificationsUI/LNNotificationsUI/Customize/*.h"
     ss.resources = ['LNNotificationsUI/LNNotificationsUI/LNNotificationsUIAssets.xcassets']
     ss.dependency 'LNNotificationsUI/Banner'
   end
