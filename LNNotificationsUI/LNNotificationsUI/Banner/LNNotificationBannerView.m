@@ -96,10 +96,12 @@ static const CGFloat LNNotificationRelativeLabelCollapse = 5.0 * 60.0;
 		self.backgroundColor = [UIColor clearColor];
 		
 		UIView<_LNBackgroundViewCommon>* bgView;
-		
-		if([UIVisualEffectView class])
+
+      Class blurClass = NSClassFromString(@"UIBlurEffect");
+      Class effectViewClass = NSClassFromString(@"UIVisualEffectView");
+		if(blurClass)
 		{
-			bgView = (id)[[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:style == LNNotificationBannerStyleDark ? UIBlurEffectStyleDark : UIBlurEffectStyleExtraLight]];
+			bgView = (id)[[effectViewClass alloc] initWithEffect:[blurClass effectWithStyle:style == LNNotificationBannerStyleDark ? UIBlurEffectStyleDark : UIBlurEffectStyleExtraLight]];
 		}
 		else
 		{
@@ -167,10 +169,11 @@ static const CGFloat LNNotificationRelativeLabelCollapse = 5.0 * 60.0;
 		[_dateLabel setContentHuggingPriority:1000 forAxis:UILayoutConstraintAxisHorizontal];
 		[_dateLabel setContentHuggingPriority:1000 forAxis:UILayoutConstraintAxisVertical];
 		
-		UIView<_LNBackgroundViewCommon>* dateBG;
-		if([UIVisualEffectView class])
+      UIView<_LNBackgroundViewCommon>* dateBG;
+      Class vibrancyClass = NSClassFromString(@"UIVibrancyEffect");
+		if(vibrancyClass)
 		{
-			dateBG = (id)[[UIVisualEffectView alloc] initWithEffect:[UIVibrancyEffect effectForBlurEffect:(id)bgView.effect]];
+			dateBG = (id)[[effectViewClass alloc] initWithEffect:[vibrancyClass effectForBlurEffect:(id)bgView.effect]];
 		}
 		else
 		{
@@ -214,9 +217,9 @@ static const CGFloat LNNotificationRelativeLabelCollapse = 5.0 * 60.0;
 		
 		UIView<_LNBackgroundViewCommon>* drawerBG;
 		
-		if([UIVisualEffectView class])
+		if(vibrancyClass)
 		{
-			drawerBG = (id)[[UIVisualEffectView alloc] initWithEffect:[UIVibrancyEffect effectForBlurEffect:(id)bgView.effect]];
+			drawerBG = (id)[[effectViewClass alloc] initWithEffect:[vibrancyClass effectForBlurEffect:(id)bgView.effect]];
 		}
 		else
 		{

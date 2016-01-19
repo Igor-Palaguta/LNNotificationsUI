@@ -127,8 +127,9 @@
 	[self.contentView addSubview:none];
 	[self.contentView addSubview:banner];
 	[self.contentView addSubview:alert];
-	
-	if([UIVisualEffectView class])
+
+   Class effectClass = NSClassFromString(@"UIVisualEffectView");
+	if(effectClass)
 	{
 		[self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[none(==banner)]-[banner(==alert)]-[alert(==none)]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(none, banner, alert)]];
 	}

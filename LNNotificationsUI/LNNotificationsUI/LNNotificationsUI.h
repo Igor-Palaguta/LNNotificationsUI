@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <LNNotificationsUI/LNNotification.h>
-#import <LNNotificationsUI/LNNotificationCenter.h>
-#import <LNNotificationsUI/LNNotificationAppSettings.h>
-#import <LNNotificationsUI/LNNotificationSettingsController.h>
+#import <LNNotificationsUI/Banner/LNNotification.h>
+#import <LNNotificationsUI/Banner/LNNotificationCenter.h>
+#import <LNNotificationsUI/Banner/LNNotificationAppSettings.h>

@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-
-@import LNNotificationsUI;
+#import <LNNotificationsUI/LNNotificationsUI.h>
 
 @interface ViewController ()
 
