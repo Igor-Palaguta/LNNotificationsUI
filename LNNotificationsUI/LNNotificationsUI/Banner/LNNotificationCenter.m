@@ -162,14 +162,10 @@ static NSString *const _LNSettingsKey = @"LNNotificationSettingsKey";
 - (void)registerApplicationWithIdentifier:(NSString*)appIdentifier name:(NSString*)name icon:(UIImage*)icon defaultSettings:(LNNotificationAppSettings *)defaultSettings
 {
 	NSParameterAssert(appIdentifier != nil);
-	NSParameterAssert(name != nil);
-	NSParameterAssert(defaultSettings != nil);
-	
-	if(icon == nil)
-	{
-		icon = [UIImage imageNamed:@"LNNotificationsUIDefaultAppIcon"];
-	}
-	
+   NSParameterAssert(name != nil);
+   NSParameterAssert(icon != nil);
+   NSParameterAssert(defaultSettings != nil);
+
 	_applicationMapping[appIdentifier] = @{LNAppNameKey: name, LNAppIconNameKey: icon};
 	if(_notificationSettings[appIdentifier] == nil)
 	{

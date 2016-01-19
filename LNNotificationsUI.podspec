@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.author       = "Leo Natan"
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/Igor-Palaguta/LNNotificationsUI.git" }
+  s.default_subspec = 'Banner'
 
   s.subspec "Banner" do |ss|
     ss.source_files = "LNNotificationsUI/LNNotificationsUI/Banner/*.{h,m}", 'LNNotificationsUI/LNNotificationsUI/LNNotificationsUI.h'
@@ -23,6 +24,7 @@ Pod::Spec.new do |s|
   s.subspec "Customize" do |ss|
     ss.source_files = "LNNotificationsUI/LNNotificationsUI/Customize/*.{h,m}"
     ss.public_header_files = "LNNotificationsUI/LNNotificationsUI/Customize/*.h"
+    ss.resources = ['LNNotificationsUI/LNNotificationsUI/LNNotificationsUIAssets.xcassets']
     ss.dependency 'LNNotificationsUI/Banner'
   end
 
