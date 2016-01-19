@@ -10,7 +10,6 @@
 		3976DDB619CCA37F00053EEF /* LNNotificationsUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3976DDB519CCA37F00053EEF /* LNNotificationsUIAssets.xcassets */; };
 		39D646E319E5D7460069C197 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D646E219E5D7460069C197 /* AVFoundation.framework */; };
 		39FC4F8919B8EFB400E45E37 /* LNNotificationsUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 39FC4F8819B8EFB400E45E37 /* LNNotificationsUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39FDB3F219CB9A97001E5134 /* LNNotificationAppSettings_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 39FDB3F119CB9A97001E5134 /* LNNotificationAppSettings_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		786207A21C4E423B00D520E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D646E219E5D7460069C197 /* AVFoundation.framework */; };
 		786207AA1C4E4A1C00D520E8 /* LNNotificationsAppSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 786207A61C4E4A1C00D520E8 /* LNNotificationsAppSettingsController.m */; };
 		786207AB1C4E4A1C00D520E8 /* LNNotificationsAppSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 786207A61C4E4A1C00D520E8 /* LNNotificationsAppSettingsController.m */; };
@@ -33,6 +32,7 @@
 		786207E01C4E4A6B00D520E8 /* LNNotificationBannerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 786207D21C4E4A6B00D520E8 /* LNNotificationBannerWindow.m */; };
 		786207E11C4E4A6B00D520E8 /* LNNotificationBannerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 786207D21C4E4A6B00D520E8 /* LNNotificationBannerWindow.m */; };
 		786207E21C4E4A6B00D520E8 /* LNNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 786207D31C4E4A6B00D520E8 /* LNNotificationCenter.h */; };
+		786207E41C4E5C3B00D520E8 /* LNNotificationAppSettings_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 786207E31C4E5C3B00D520E8 /* LNNotificationAppSettings_Private.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,7 +53,6 @@
 		39FC4F8319B8EFB400E45E37 /* LNNotificationsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LNNotificationsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FC4F8719B8EFB400E45E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39FC4F8819B8EFB400E45E37 /* LNNotificationsUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LNNotificationsUI.h; path = LNNotificationsUI/LNNotificationsUI.h; sourceTree = "<group>"; };
-		39FDB3F119CB9A97001E5134 /* LNNotificationAppSettings_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNNotificationAppSettings_Private.h; sourceTree = "<group>"; };
 		7862078C1C4E404D00D520E8 /* libLNNotificationsUILib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLNNotificationsUILib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		786207A61C4E4A1C00D520E8 /* LNNotificationsAppSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNNotificationsAppSettingsController.m; sourceTree = "<group>"; };
 		786207A71C4E4A1C00D520E8 /* LNNotificationsAppSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNNotificationsAppSettingsController.h; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		786207D11C4E4A6B00D520E8 /* LNNotificationBannerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNNotificationBannerWindow.h; sourceTree = "<group>"; };
 		786207D21C4E4A6B00D520E8 /* LNNotificationBannerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNNotificationBannerWindow.m; sourceTree = "<group>"; };
 		786207D31C4E4A6B00D520E8 /* LNNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNNotificationCenter.h; sourceTree = "<group>"; };
+		786207E31C4E5C3B00D520E8 /* LNNotificationAppSettings_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNNotificationAppSettings_Private.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,6 @@
 				786207A51C4E4A0800D520E8 /* Customize */,
 				3976DDB519CCA37F00053EEF /* LNNotificationsUIAssets.xcassets */,
 				39D646E219E5D7460069C197 /* AVFoundation.framework */,
-				39FDB3F119CB9A97001E5134 /* LNNotificationAppSettings_Private.h */,
 				39FC4F8619B8EFB400E45E37 /* Supporting Files */,
 			);
 			path = LNNotificationsUI;
@@ -144,6 +143,7 @@
 		786207B01C4E4A3F00D520E8 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
+				786207E31C4E5C3B00D520E8 /* LNNotificationAppSettings_Private.h */,
 				786207CA1C4E4A6B00D520E8 /* LNNotificationBannerView.m */,
 				786207CB1C4E4A6B00D520E8 /* LNNotificationCenter.m */,
 				786207CC1C4E4A6B00D520E8 /* LNNotification.h */,
@@ -167,12 +167,12 @@
 			files = (
 				39FC4F8919B8EFB400E45E37 /* LNNotificationsUI.h in Headers */,
 				786207DF1C4E4A6B00D520E8 /* LNNotificationBannerWindow.h in Headers */,
-				39FDB3F219CB9A97001E5134 /* LNNotificationAppSettings_Private.h in Headers */,
 				786207DB1C4E4A6B00D520E8 /* LNNotificationAppSettings.h in Headers */,
 				786207DE1C4E4A6B00D520E8 /* LNNotificationBannerView.h in Headers */,
 				786207D81C4E4A6B00D520E8 /* LNNotification.h in Headers */,
 				786207AD1C4E4A1C00D520E8 /* LNNotificationSettingsController.h in Headers */,
 				786207AC1C4E4A1C00D520E8 /* LNNotificationsAppSettingsController.h in Headers */,
+				786207E41C4E5C3B00D520E8 /* LNNotificationAppSettings_Private.h in Headers */,
 				786207E21C4E4A6B00D520E8 /* LNNotificationCenter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
