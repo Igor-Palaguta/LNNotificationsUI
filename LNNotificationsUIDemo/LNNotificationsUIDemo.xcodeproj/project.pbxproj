@@ -327,7 +327,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				HEADER_SEARCH_PATHS = ../LNNotificationsUI;
+				HEADER_SEARCH_PATHS = "../LNNotificationsUI/**";
 				INFOPLIST_FILE = LNNotificationsUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spangleapp.LNNotificationsUIDemo;
@@ -344,7 +344,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				HEADER_SEARCH_PATHS = ../LNNotificationsUI;
+				HEADER_SEARCH_PATHS = "../LNNotificationsUI/**";
 				INFOPLIST_FILE = LNNotificationsUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spangleapp.LNNotificationsUIDemo;
